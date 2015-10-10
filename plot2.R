@@ -20,7 +20,7 @@ power_data<-read.table('household_power_consumption.txt',header=F,
 ## since I didn't read in the first line, I have to grab it for headers.
 headers<-read.table('household_power_consumption.txt',header=T,
                     sep=";",nrows=1
-                    )
+                   )
 
 ##now give the data of interest the column names I want from the header file.
 colnames(power_data)<- colnames(headers)
